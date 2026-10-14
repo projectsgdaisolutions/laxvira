@@ -1,0 +1,56 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Secrets & Environment Variables (NEVER commit live keys)
+.env
+.env.local
+.env.production
+
+# Database Files
+*.db
+*.sqlite
+*.sqlite3
+gdbilling.db
+
+# Heavy AI & Model Files (Exceeds GitHub 100MB limit)
+*.gguf
+*.bin
+*.safetensors
+invoice_checkpoints/
+outputs/
+unsloth_compiled_cache/
+
+# Python Cache & System Files
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+Thumbs.db

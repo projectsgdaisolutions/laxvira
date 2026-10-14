@@ -1,0 +1,50 @@
+export const dashboardSummary = {
+  stats: [
+    {
+      id: 1,
+      title: "Today's Sales",
+      value: "₹24,068",
+      change: "+8%",
+      positive: true,
+      type: "sales",
+      subtitle: "vs ₹18,019 yesterday",
+    },
+    {
+      id: 2,
+      title: "Today's Orders",
+      value: "184",
+      change: "+2%",
+      positive: true,
+      type: "orders",
+      subtitle: "vs 170 yesterday",
+    },
+    {
+      id: 3,
+      title: "Low Stock Items",
+      value: "12",
+      change: "-3%",
+      positive: false,
+      type: "stock",
+      subtitle: "Need to reorder",
+    },
+    {
+      id: 4,
+      title: "Active Customers",
+      value: "2,847",
+      change: "+5%",
+      positive: true,
+      type: "customers",
+      subtitle: "Last 30 days",
+    },
+  ],
+
+  salesTrend: [
+    { date: "Monday", total_sales: 12000 },
+    { date: "Tuesday", total_sales: 18000 },
+    { date: "Wednesday", total_sales: 15000 },
+    { date: "Thursday", total_sales: 21000 },
+    { date: "Friday", total_sales: 26000 },
+    { date: "Saturday", total_sales: 23000 },
+    { date: "Sunday", total_sales: 19000 },
+  ],
+};

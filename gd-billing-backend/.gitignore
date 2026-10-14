@@ -1,0 +1,30 @@
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Secrets & Environment Variables (NEVER commit live keys)
+.env
+.env.local
+.env.production
+
+# Database Files
+*.db
+*.sqlite
+*.sqlite3
+gdbilling.db
+
+# Heavy AI & Model Files (Exceeds GitHub 100MB limit)
+*.gguf
+*.bin
+*.safetensors
+invoice_checkpoints/
+outputs/
+unsloth_compiled_cache/
+
+# Python Cache & System Files
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+Thumbs.db

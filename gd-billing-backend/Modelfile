@@ -1,0 +1,27 @@
+# FROM ./qwen2.5-1.5b-instruct.Q4_K_M.gguf
+
+# TEMPLATE """<|im_start|>system
+# {{ .System }}<|im_end|>
+# <|im_start|>user
+# {{ .Prompt }}<|im_end|>
+# <|im_start|>assistant
+# """
+
+# SYSTEM """You are a specialized enterprise invoice parser. Extract details into valid JSON."""
+
+# PARAMETER temperature 0.1
+# PARAMETER num_ctx 2048
+
+FROM ./qwen2.5-1.5b-instruct.Q4_K_M.gguf
+
+TEMPLATE """<|im_start|>system
+{{ .System }}<|im_end|>
+<|im_start|>user
+{{ .Prompt }}<|im_end|>
+<|im_start|>assistant
+"""
+
+SYSTEM """You are a specialized enterprise invoice parser. Extract details into valid JSON."""
+
+PARAMETER temperature 0.1
+PARAMETER num_ctx 2048
